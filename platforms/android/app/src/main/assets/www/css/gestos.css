@@ -1,0 +1,113 @@
+body{
+   background-color: blue;
+}
+body.claro{
+   background-image: url(../img/2006.jpg);
+}
+body.obscuro{
+   background-image:url(../img/2016.jpg);
+}
+
+button{
+   background-color: red;
+   width: 50%;
+   padding: 10px;
+   font-size: 1em;
+   margin-top: 10px;
+   margin-left: 400px;
+}
+
+div{
+   background-color: white;
+   width: 750px;
+   height: 500px;
+   margin-top: 40px;
+   margin-left: 400px;
+  
+}
+h1{
+   text-align: center;
+   margin: 10px;
+   font-size: 2em;
+   text-transform: uppercase;
+   color: red;
+}
+
+#zona-gestos.tap{
+   -webkit-animation: click 1.5s 1;
+}
+
+#zona-gestos.doubletap{
+   -webkit-animation: pulsacion 1.5s 1;
+}
+
+#zona-gestos.press{
+   -webkit-animation: presion 1.5s 1;
+}
+#zona-gestos.swipeD{
+   -webkit-animation: swipeDerecha 2s 1;
+}
+#zona-gestos.swipeI{
+   -webkit-animation: swipeIzquierda 2s 1;
+}
+#zona-gestos.rotate-R{
+   -webkit-animation: rotarR 2s 1;
+}
+#zona-gestos.rotate-L{
+   -webkit-animation: rotarL 2s 1;
+}
+
+@-webkit-keyframes click {
+   0%, 100%{
+       background-ima: greenyellow;
+   }
+   100%{
+       background-image: url(../img/chivas.jpg)
+   }
+}
+
+@-webkit-keyframes pulsacion{
+   0%, 100%{
+       background-color: greenyellow;
+   }
+   50%{
+       background-color: rgb(248, 37, 202);
+   }
+}
+
+@-webkit-keyframes presion{
+   0%, 100%{
+       background-color: greenyellow;
+   }
+   50%{
+       background-color:  rgb(41, 159, 180);
+   }
+}
+
+@-webkit-keyframes swipeDerecha{
+   0%, 100%{
+       margin-left: 0%;
+   }
+   50%{
+       margin-left: 50%;
+   }
+}
+@-webkit-keyframes swipeIzquierda{
+   0%, 100%{
+       width: 50%;
+   }
+   50%{
+       width: 0%;
+   }
+}
+
+@-webkit-keyframes rotarR{
+   100%{
+       -webkit-transform: rotate(360deg);
+   }
+}
+@-webkit-keyframes rotarL{
+   100%{
+       -webkit-transform: rotate(-360deg);
+   }
+}
